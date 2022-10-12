@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Course = ({topic}) => {
-    const {logo,name,total} = topic;
+    const {logo,name,total,id} = topic;
     return (
         <div className='border-2 rounded-lg w-72 mt-8 sm:mt-0'>
             <img src={logo} alt="" className=' w-11/12 mx-auto bg-indigo-100 my-2 rounded-lg' />
@@ -12,7 +13,7 @@ const Course = ({topic}) => {
             <p className='text-sky-700 font-bold '>Total Questions: {total}</p>
             </div>
             <div className='mr-4 bg-sky-700 hover:bg-sky-900 rounded-md text-white p-2 	'>
-            <button>Start Practice</button>
+            <Link to={`/topic/${id}`}><button>Start Practice</button></Link>
             </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ const NavigationBar = () => {
             <div>
                 <ul className='sm:flex text-cyan-800 text-lg'>
                     <Link to='/' className='anchor block'>Home</Link>
-                    <Link to='/topics' className='anchor block'>Topics</Link>
+                    <Link to='/' className='anchor block'>Topics</Link>
                     <Link to='/statistics' className='anchor block'>Statistics</Link>
                     <Link to='/blog' className='anchor block'>Blog</Link>
 
